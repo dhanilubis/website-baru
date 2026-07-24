@@ -2,7 +2,7 @@
 include 'koneksi.php';
 
 // 1. Tentukan Kuota Maksimal Pendaftaran
-$total_kuota = 7;
+$total_kuota = 50;
 
 // 2. Hitung jumlah pendaftar (user dengan role 'user') dari database
 $query_user = mysqli_query($koneksi, "SELECT COUNT(*) as total_pendaftar FROM users WHERE role = 'user'");
