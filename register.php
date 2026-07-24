@@ -3,7 +3,7 @@ session_start();
 include 'koneksi.php';
 
 // --- CEK KUOTA PENDAFTARAN ---
-$total_kuota = 7;
+$total_kuota = 50;
 
 $query_user = mysqli_query($koneksi, "SELECT COUNT(*) as total_pendaftar FROM users WHERE role = 'user'");
 $data_user  = mysqli_fetch_assoc($query_user);
